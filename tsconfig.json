@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "typeRoots": ["node_modules/@types"],
+        "target":"es6",
+        "listFiles": true,
+        "newLine": "LF",
+        "sourceMap": true,
+        "module": "commonjs",
+        //"rootDir": "src/",
+        //"sourceRoot": "src/",
+        "outDir": "dist/",
+        "declaration": true
+        //"outFile": "dist/outtest.js"//,
+        //"inlineSourceMap": true
+    },
+    "include": [
+        "src/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

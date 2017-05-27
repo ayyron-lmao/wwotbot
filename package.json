@@ -2,14 +2,27 @@
   "name": "wwotbot",
   "version": "1.0.0",
   "description": "A Bot for WWOT using discord.js and node.js",
-  "main": "index.js",
+  "main": "dist/index",
+  "types": "dist/index",
   "directories": {
-    "example": "examples",
+    "example": "src",
+    "dist": "dist",
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "b": "tsc",
+    "r": "node dist/index.js",
+    "br": "npm run b && npm run r"
   },
   "author": "somners",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^7.0.13",
+    "discord.js": "^11.0.0",
+    "typescript": "^2.3.2"
+  },
+  "dependencies": {
+    "feederjs": "^1.0.3"
+  }
 }
